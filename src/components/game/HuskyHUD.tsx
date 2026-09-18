@@ -189,7 +189,7 @@ export const HuskyHUD: React.FC<HuskyHUDProps> = ({
           {activeItem && (
             <div className="text-[10px] text-amber-200 flex items-center gap-1.5 font-medium px-1">
               <span className="font-bold text-amber-300">{activeItem.name}</span>
-              <span className="text-emerald-400 font-bold">+{activeItem.loveBonus}% Amor</span>
+              <span className="text-emerald-400 font-bold">+{activeItem.loveBonus}%</span>
             </div>
           )}
 

@@ -222,7 +222,7 @@ export const PixelCanvas: React.FC = () => {
 
     updateQuest('pet_all', 1);
     checkMemoryMilestones(husky, newLove);
-    showToast(`💖 ¡Acariciaste a ${husky.name}! (+${loveGain}% Amor)`);
+    showToast(`💖 ¡Acariciaste a ${husky.name}! (+${loveGain}%)`);
   };
 
   // Feed Action
@@ -274,7 +274,7 @@ export const PixelCanvas: React.FC = () => {
 
     updateQuest('first_treat', 1);
     checkMemoryMilestones(husky, newLove);
-    showToast(`🍖 ¡${husky.name} saboreó ${item.name}! (+${Math.round(bonus)}% Amor)`);
+    showToast(`🍖 ¡${husky.name} saboreó ${item.name}! (+${Math.round(bonus)}%)`);
   };
 
   // Update Custom Description
@@ -654,7 +654,7 @@ export const PixelCanvas: React.FC = () => {
             const newLove = Math.min(100, husky.love + loveGain);
             husky.love = newLove;
             updateQuest('play_fetch', 1);
-            showToast(`🎾 ¡${husky.name} te trajo la pelota! (+${loveGain}% Amor)`);
+            showToast(`🎾 ¡${husky.name} te trajo la pelota! (+${loveGain}%)`);
           } else {
             // Run toward player
             const angle = Math.atan2(player.y - husky.y, player.x - husky.x);

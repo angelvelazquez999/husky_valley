@@ -109,7 +109,7 @@ export const HuskyDialogueModal: React.FC<HuskyDialogueModalProps> = ({
                 />
               ))}
               <span className="text-base font-black text-[#5c2e07] ml-2 animate-pulse">
-                {husky.love}% Amor
+                {husky.love}%
               </span>
             </div>
           </div>
@@ -123,7 +123,7 @@ export const HuskyDialogueModal: React.FC<HuskyDialogueModalProps> = ({
             className="pixel-btn pixel-btn-wood py-2 px-3 flex items-center justify-center gap-2 text-xs font-bold shadow-md"
           >
             <Heart className="w-4 h-4 fill-rose-400 text-rose-400 animate-bounce" />
-            <span>Acariciar (+8% Amor)</span>
+            <span>Acariciar (+8%)</span>
           </button>
 
           {/* TOGGLE FOLLOW BUTTON */}
@@ -163,7 +163,7 @@ export const HuskyDialogueModal: React.FC<HuskyDialogueModalProps> = ({
                       : 'pixel-btn-wood hover:scale-103'
                     : 'bg-[#d6c5a8] text-[#8c7b64] border-2 border-[#b5a385] opacity-50 cursor-not-allowed'
                     }`}
-                  title={hasCount ? `Dar ${item.name} (+${item.loveBonus}% Amor)` : 'No tienes en el inventario'}
+                  title={hasCount ? `Dar ${item.name} (+${item.loveBonus}%)` : 'No tienes en el inventario'}
                 >
                   <div className="flex items-center gap-1.5 truncate">
                     <span className="text-base">

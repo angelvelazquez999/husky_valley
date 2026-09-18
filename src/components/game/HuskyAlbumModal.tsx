@@ -53,49 +53,43 @@ export const HuskyAlbumModal: React.FC<HuskyAlbumModalProps> = ({
         <div className="flex items-center gap-1.5 overflow-x-auto py-2 border-b border-[#b88544] scrollbar-none">
           <button
             onClick={() => setSelectedFilter('all')}
-            className={`pixel-btn px-3 py-1 text-xs rounded ${
-              selectedFilter === 'all' ? 'pixel-btn-gold font-bold' : 'pixel-btn-wood'
-            }`}
+            className={`pixel-btn px-3 py-1 text-xs rounded ${selectedFilter === 'all' ? 'pixel-btn-gold font-bold' : 'pixel-btn-wood'
+              }`}
           >
             Todos
           </button>
           <button
             onClick={() => setSelectedFilter('yeiko')}
-            className={`pixel-btn px-3 py-1 text-xs rounded ${
-              selectedFilter === 'yeiko' ? 'pixel-btn-gold font-bold' : 'pixel-btn-wood'
-            }`}
+            className={`pixel-btn px-3 py-1 text-xs rounded ${selectedFilter === 'yeiko' ? 'pixel-btn-gold font-bold' : 'pixel-btn-wood'
+              }`}
           >
             ⚡ Yeiko
           </button>
           <button
             onClick={() => setSelectedFilter('bella')}
-            className={`pixel-btn px-3 py-1 text-xs rounded ${
-              selectedFilter === 'bella' ? 'pixel-btn-gold font-bold' : 'pixel-btn-wood'
-            }`}
+            className={`pixel-btn px-3 py-1 text-xs rounded ${selectedFilter === 'bella' ? 'pixel-btn-gold font-bold' : 'pixel-btn-wood'
+              }`}
           >
             🌸 Bella
           </button>
           <button
             onClick={() => setSelectedFilter('lola')}
-            className={`pixel-btn px-3 py-1 text-xs rounded ${
-              selectedFilter === 'lola' ? 'pixel-btn-gold font-bold' : 'pixel-btn-wood'
-            }`}
+            className={`pixel-btn px-3 py-1 text-xs rounded ${selectedFilter === 'lola' ? 'pixel-btn-gold font-bold' : 'pixel-btn-wood'
+              }`}
           >
             🍖 Lola
           </button>
           <button
             onClick={() => setSelectedFilter('cejas')}
-            className={`pixel-btn px-3 py-1 text-xs rounded ${
-              selectedFilter === 'cejas' ? 'pixel-btn-gold font-bold' : 'pixel-btn-wood'
-            }`}
+            className={`pixel-btn px-3 py-1 text-xs rounded ${selectedFilter === 'cejas' ? 'pixel-btn-gold font-bold' : 'pixel-btn-wood'
+              }`}
           >
             🌙 Cejas
           </button>
           <button
             onClick={() => setSelectedFilter('frida')}
-            className={`pixel-btn px-3 py-1 text-xs rounded ${
-              selectedFilter === 'frida' ? 'pixel-btn-gold font-bold' : 'pixel-btn-wood'
-            }`}
+            className={`pixel-btn px-3 py-1 text-xs rounded ${selectedFilter === 'frida' ? 'pixel-btn-gold font-bold' : 'pixel-btn-wood'
+              }`}
           >
             🧭 Frida
           </button>
@@ -109,9 +103,8 @@ export const HuskyAlbumModal: React.FC<HuskyAlbumModalProps> = ({
             return (
               <div
                 key={memory.id}
-                className={`bg-white p-3 rounded shadow-md border-2 border-stone-300 flex flex-col transform transition-transform duration-200 hover:rotate-1 hover:scale-102 ${
-                  isUnlocked ? 'opacity-100' : 'opacity-65 grayscale'
-                }`}
+                className={`bg-white p-3 rounded shadow-md border-2 border-stone-300 flex flex-col transform transition-transform duration-200 hover:rotate-1 hover:scale-102 ${isUnlocked ? 'opacity-100' : 'opacity-65 grayscale'
+                  }`}
               >
                 {/* Photo frame */}
                 <div className="w-full aspect-[4/3] bg-[#0c142c] rounded flex items-center justify-center relative overflow-hidden border border-stone-400">
@@ -126,14 +119,14 @@ export const HuskyAlbumModal: React.FC<HuskyAlbumModalProps> = ({
                       </span>
                       <span className="text-xs font-bold text-amber-200 flex items-center gap-1">
                         <Heart className="w-3 h-3 fill-rose-500 text-rose-500" />
-                        {memory.threshold}% de Amor
+                        {memory.threshold}%
                       </span>
                     </div>
                   ) : (
                     <div className="flex flex-col items-center text-stone-500 gap-1">
                       <Lock className="w-6 h-6" />
                       <span className="text-[10px] font-bold text-stone-400">
-                        Requiere {memory.threshold}% de Amor
+                        Requiere {memory.threshold}%
                       </span>
                     </div>
                   )}

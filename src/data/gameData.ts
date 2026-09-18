@@ -245,7 +245,7 @@ export const INITIAL_QUESTS: Quest[] = [
   {
     id: 'master_love',
     title: 'Corazones al 100%',
-    description: 'Alcanza el 100% de amor con los 5 huskies.',
+    description: 'Alcanza el 100% con los 5.',
     target: 5,
     current: 0,
     completed: false,
